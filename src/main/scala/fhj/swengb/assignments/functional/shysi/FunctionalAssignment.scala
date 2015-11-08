@@ -39,8 +39,7 @@ case class FunctionalAssignment(lowerBound: Int = 1,
     * x(999) = lowerbound
     *
     */
-  val ys: Seq[Int] = xs.map(x => x * factor).reverse //.reversmap versuchen
-
+  val ys: Seq[Int] = xs.reverseMap(x => x*factor)
   /**
     * this sequence contains pairs of xs and ys. the ys should
     * be in reversed order.
